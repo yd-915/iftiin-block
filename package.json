@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "npm run dev:server",
-    "build": "babel src --extensions \".js,.ts\" --out-dir dist",
+    "build": "npm run build",
     "dev:server": "tsnd -r tsconfig-paths/register --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
     "dev:debug": "tsnd -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts"
   },
